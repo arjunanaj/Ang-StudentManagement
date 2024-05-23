@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class LoginService {
 
   
-  private basicUrl:String="http://localhost:9091/Login"
+  private basicUrl:String="https://springimage-2-2-0.onrender.com/Login"
   constructor( private httpclient:HttpClient,private router:Router) { }
 
   public validateUser(login:Login):Observable<HttpResponse<any>>{

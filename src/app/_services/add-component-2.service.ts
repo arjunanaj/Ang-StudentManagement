@@ -12,7 +12,7 @@ import { Componentss } from '../_class/componentss';
 })
 export class AddComponent2Service {
 
-  private basicUrl:String="http://localhost:9091/component_2"
+  private basicUrl:String="https://springimage-2-2-0.onrender.com/component_2"
   constructor( private httpclient:HttpClient,private router:Router) { }
 
 

@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class RegisterService {
 
-  private basicUrl:String="http://localhost:9091/Register"
+  private basicUrl:String="https://springimage-2-2-0.onrender.com/Register"
   constructor( private httpclient:HttpClient) { }
 
   public addNewUser(register:Register):Observable<HttpResponse<any>>{

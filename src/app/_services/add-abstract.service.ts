@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class AddAbstractService {
 
 
-  private basicUrl:String="http://localhost:9091/abstract"
+  private basicUrl:String="https://springimage-2-2-0.onrender.com/abstract"
   constructor( private httpclient:HttpClient,private router:Router) { }
 
 
