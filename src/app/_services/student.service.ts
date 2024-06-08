@@ -9,7 +9,7 @@ import { Student } from '../_class/student';
 })
 export class StudentService {
 
-  private basicUrl:String="https://springimage-2-2-0.onrender.com/Student"
+  private basicUrl:String="https://spring-std-1-1-0.onrender.com/Student"
   constructor( private httpclient:HttpClient,private router:Router) { }
 
   public addNewUser(student:Student):Observable<HttpResponse<any>>{

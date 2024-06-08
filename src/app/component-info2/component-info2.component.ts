@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { LoginService } from '../_services/login.service';
 import { AddComponent2Service } from '../_services/add-component-2.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-component-info2',
@@ -18,7 +19,7 @@ export class ComponentInfo2Component {
   serverErrorImg2=true;
   serverErrorImg3=true;
 
-  constructor(public loginService:LoginService,public addcomponentService:AddComponent2Service){}
+  constructor(public loginService:LoginService,public addcomponentService:AddComponent2Service,private router:Router){}
 
   ngOnInit(): void {
     this.loginService.canAuthenticate()
@@ -79,7 +80,9 @@ this.addcomponentService.getComponentDef().subscribe((data)=>{
     })
   }
   retry(){
-    window.location.reload()
+    location.reload()
+    this.router.navigate(['/abstract'])
+   
   }
 
 }

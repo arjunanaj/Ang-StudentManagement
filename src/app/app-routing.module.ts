@@ -14,8 +14,10 @@ import { AddStudentComponent } from './add-student/add-student.component';
 import { ShowListComponent } from './show-list/show-list.component';
 import { UpdateStudentComponent } from './update-student/update-student.component';
 
+
 const routes: Routes = [
   { path: '', redirectTo: '/abstract', pathMatch: 'full' },
+
   { path: 'abstract', component: AbstractComponent },
   { path: "compo_1", component:ComponentInfo1Component},
   { path: "compo_2", component:ComponentInfo2Component },

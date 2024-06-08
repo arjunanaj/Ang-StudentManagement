@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class RegisterService {
 
-  private basicUrl:String="https://springimage-2-2-0.onrender.com/Register"
+  private basicUrl:String="https://spring-std-1-1-0.onrender.com/Register"
   constructor( private httpclient:HttpClient) { }
 
   public addNewUser(register:Register):Observable<HttpResponse<any>>{
@@ -20,7 +20,7 @@ export class RegisterService {
 
     return this.httpclient.put(`${this.basicUrl}/updateUserImage?emailId=${emailId}`,formData,{observe:'response',responseType:'text' as 'json'});
   }
-  public getImage(name:string):Observable<Blob>{
-    return this.httpclient.get(`${this.basicUrl}/getImage?emailId=${name}`,{ responseType: 'blob' })
+  public getImage(name:string):Observable<any>{
+    return this.httpclient.get(`${this.basicUrl}/getImage?emailId=${name}`,{observe:'response', responseType: 'blob' })
   }
 }

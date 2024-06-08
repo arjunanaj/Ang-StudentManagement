@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class LoginService {
 
   
-  private basicUrl:String="https://springimage-2-2-0.onrender.com/Login"
+  private basicUrl:String="https://spring-std-1-1-0.onrender.com/Login"
   constructor( private httpclient:HttpClient,private router:Router) { }
 
   public validateUser(login:Login):Observable<HttpResponse<any>>{
@@ -43,7 +43,7 @@ export class LoginService {
 
   canAuthenticate(){
     if(this.isAuthenticate()){
-      console.log(this.isAuthenticate())
+      
       this.router.navigate(['/showStudent']);
       
     }
