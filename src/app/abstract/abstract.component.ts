@@ -64,8 +64,11 @@ export class AbstractComponent  implements OnInit{
     })
   }
   retry(){
-    location.reload()
-    this.router.navigate(['/abstract'])
+  
+    this.router.navigate([this.router.url])
+    .then(() => {
+        window.location.reload();
+    });
   }
 
 }

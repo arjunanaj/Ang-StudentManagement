@@ -16,7 +16,7 @@ import { UpdateStudentComponent } from './update-student/update-student.componen
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/abstract', pathMatch: 'full' },
+  { path: ' ', redirectTo:'/abstract', pathMatch: 'full' },
 
   { path: 'abstract', component: AbstractComponent },
   { path: "compo_1", component:ComponentInfo1Component},
