@@ -24,6 +24,7 @@ import { ComponentInfo2Component } from './component-info2/component-info2.compo
 import { AddStudentComponent } from './add-student/add-student.component';
 import { ShowListComponent } from './show-list/show-list.component';
 import { UpdateStudentComponent } from './update-student/update-student.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { UpdateStudentComponent } from './update-student/update-student.componen
     AddStudentComponent,
     ShowListComponent,
     UpdateStudentComponent,
+    HomeComponent,
 
   ],
   imports: [

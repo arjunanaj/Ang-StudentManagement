@@ -13,11 +13,12 @@ import { ComponentInfo2Component } from './component-info2/component-info2.compo
 import { AddStudentComponent } from './add-student/add-student.component';
 import { ShowListComponent } from './show-list/show-list.component';
 import { UpdateStudentComponent } from './update-student/update-student.component';
+import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
-  { path: ' ', redirectTo:'/abstract', pathMatch: 'full' },
-
+  { path: '',redirectTo:'', pathMatch:'full' },
+  { path: '', component: HomeComponent },
   { path: 'abstract', component: AbstractComponent },
   { path: "compo_1", component:ComponentInfo1Component},
   { path: "compo_2", component:ComponentInfo2Component },
