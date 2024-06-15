@@ -19,7 +19,7 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   { path: '',redirectTo:'', pathMatch:'full' },
   { path: '', component: HomeComponent },
-  { path: 'abstract', component: AbstractComponent },
+  { path: '/abstract', component: AbstractComponent },
   { path: "compo_1", component:ComponentInfo1Component},
   { path: "compo_2", component:ComponentInfo2Component },
   {path:"signin",component:LoginComponent},
